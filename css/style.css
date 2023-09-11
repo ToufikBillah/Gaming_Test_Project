@@ -1,0 +1,691 @@
+/* common css  start*/
+html {
+    scroll-behavior: smooth;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1140px;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+:root {
+    --Hotpink: rgb(234, 48, 141);
+    --purple: rgb(175, 14, 175);
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.pink {
+    color: var(--Hotpink);
+}
+
+.clr_purple {
+    color: var(--purple);
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+section {
+    margin-top: 80px;
+}
+
+/* common css end */
+/* menu section start */
+.menu_container .logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.menu_container .logo img {
+    height: 25px;
+    width: 55px;
+}
+
+.menu_container .nav .navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.nav .navbar .follow {
+    background: rgb(233, 233, 233);
+    height: 35px;
+    width: 165px;
+    display: flex;
+    gap: 10px;
+    margin-top: -8px;
+    padding-left: 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.nav .navbar .follow img {
+    height: 17px;
+    width: 25px;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* menu section end */
+
+/* banner section start */
+.banner_container {
+    display: flex;
+    gap: 40px;
+}
+
+.banner_leftbox {
+    background: url(../image/banner\ background.png) no-repeat center/cover;
+    padding-bottom: 120px;
+    width: 50%;
+}
+
+.banner_leftbox .banner_content {
+    margin-left: 190px;
+    margin-top: 120px;
+}
+
+.banner_content .goat {
+    color: var(--purple);
+    font-size: 40px;
+    font-weight: 900;
+}
+.banner_content .banner_icon{
+    display: flex;
+    gap: 10px;
+}
+.banner_content .banner_icon img{
+    height: 20px;
+    width: 20px;
+    margin-top: 13px;
+}
+.banner_content button {
+    color: white;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.banner_content .bgpink {
+    background: var(--Hotpink);
+}
+
+.banner_content .bgsky {
+    background: rgb(107, 195, 230);
+    margin-left: 10px;
+}
+
+.banner_rightbox {
+    width: 50%;
+    margin-right: 150px;
+}
+
+.banner_rightbox img {
+    height: 550px;
+}
+
+/* banner section end */
+
+/* gamer section start */
+#gamer .gamer_container {
+    display: flex;
+    gap: 40px;
+}
+
+.gamer_container .gamer_leftbox {
+    width: 50%;
+}
+
+.gamer_container .gamer_rightbox {
+    width: 50%;
+    text-align: end;
+}
+
+.gamer_rightbox .know {
+    background: var(--Hotpink);
+    color: white;
+    height: 40px;
+    width: 130px;
+    border: none;
+    border-radius: 30px;
+}
+
+.gamer_rightbox h2 {
+    color: rgb(98, 97, 97);
+}
+
+/* gamer section end */
+
+/* gamer video section start */
+.video_container .video_heading {
+    text-align: center;
+}
+
+.video_container .video_heading h1 {
+    font-size: 30px;
+}
+
+.video_container .video {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.video .single_video {
+    height: 301px;
+    width: 256px;
+    top: 3px;
+    left: 3px;
+    border-radius: 10px;
+    background: whitesmoke;
+    position: relative;
+    overflow: hidden;
+}
+.video .single_video img{
+    height: 301px;
+    width: 256px;
+}
+.single_video .intro{
+    height: 301px;
+    width: 256px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom:0px;
+    background:rgb(27, 27, 27, .1);
+    color: white;
+    transition: all .1s linear;
+}
+.single_video .intro img {
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+    margin-top: 45%;
+    margin-left: 45%;
+    border-radius: 50%;
+}
+
+.single_video .intro p {
+    visibility: hidden;
+    margin-left: 35%;
+}
+
+.single_video .intro .clr_pink {
+    color: hotpink;
+}
+.video .single_video:hover{
+    cursor: pointer;
+}
+.video .single_video:hover .intro{
+    height: 301px;
+    bottom: 0;
+    background: rgb(0, 0, 0, .8);
+}
+.single_video:hover .intro img{
+    opacity: 1;
+    visibility: visible;
+}
+.single_video:hover .intro p{
+    opacity: 1;
+    visibility: visible;
+}
+/* gamer video section end */
+
+/* play instant section start */
+.play_ins_container {
+    display: flex;
+    gap: 10px;
+}
+
+.play_ins_container .play_ins_leftbox {
+    width: 50%;
+    text-align: end;
+    margin-top: 17%;
+    margin-right: 12%;
+}
+
+.play_ins_container .play_ins_rightbox {
+    width: 50%;
+    position: relative;
+    text-align: end;
+}
+
+.play_ins_rightbox .play_ins_image2 {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 65%;
+    right: 70%;
+}
+
+/* play instant section end */
+
+/* play game section start */
+.play_gm_container {
+    display: flex;
+    gap: 10px;
+}
+
+.play_gm_container .play_gm_leftbox {
+    width: 50%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.play_gm_leftbox .play_gm_image2 {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 65%;
+    left: 70%;
+}
+
+.play_gm_container .play_gm_rightbox {
+    margin-top: 22%;
+    margin-left: 100px;
+}
+
+/* play game section end */
+
+/* careers section start */
+#careers {
+    background: rgb(249, 75, 162);
+}
+
+#careers .careers_container {
+    display: flex;
+    gap: 10px;
+}
+
+.careers_container .careers_leftbox {
+    width: 40%;
+    color: white;
+    margin-top: 90px;
+    margin-left: 175px;
+    position: relative;
+
+}
+
+.careers_leftbox .end {
+    position: absolute;
+    right: 20px;
+}
+
+.careers_leftbox button {
+    background: white;
+    color: rgb(249, 75, 162);
+    margin-top: 10px;
+    width: 180px;
+    height: 35px;
+    border: none;
+    border-radius: 30px;
+}
+
+.careers_container .careers_rightbox img {
+
+    padding-right: 100px;
+}
+
+/* careers section end */
+
+/* icon section start */
+.icon_container .icon_1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+.icon_container .icon_2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.border:hover {
+    height: 40px;
+    width: 150px;
+    padding-bottom: 7px;
+    border: 2px solid rgb(249, 75, 162);
+    background: transparent;
+    border-radius: 20px;
+}
+
+.border_:hover {
+    height: 40px;
+    width: 195px;
+    padding-bottom: 7px;
+    border: 2px solid rgb(249, 75, 162);
+    background: transparent;
+    border-radius: 20px;
+}
+
+.border img {
+    height: 30px;
+    width: 30px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.border_ img {
+    height: 30px;
+    width: 30px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.border {
+    display: flex;
+    gap: 10px;
+}
+
+.border_ {
+    display: flex;
+    gap: 10px;
+}
+
+/* icon section end */  
+
+/* footer section start */
+#footer {
+    background: rgb(45, 43, 43);
+    color: white;
+    height: 450px;
+    width: 100%;
+}
+
+.footer_container .footer_head {
+    display: flex;
+    gap: 10px;
+}
+.footer_head img {
+    height: 25px;
+    width: 55px;
+    margin-top: 120px;
+    margin-left:650px;
+}
+.footer_head .name h1{
+    margin-top: 115px;
+}
+.footer_container .footer_content {
+    display: flex;
+    gap: 30px;
+    margin-left: 500px;
+    margin-bottom: 20px;
+}
+.footer_link{
+    display: flex;
+    gap: 20px;
+    margin-left: 585px;
+}
+.footer_link .twitter img{
+    margin-top: 5px;
+   height: 40px;
+   width: 40px;
+}
+.footer_link .fb img{
+    margin-top: 10px;
+    height: 20px;
+    width: 25px;
+}
+.footer_link .youtube img{
+    margin-top: 10px;
+    height: 25px;
+    width: 40px;
+ }
+ .footer_link .linkedin img{
+    margin-top: 10px;
+    height: 25px;
+    width: 35px;
+ }
+ .footer_link .instragram img{
+    margin-top: 10px;
+    height: 25px;
+    width: 35px;
+ }
+ .footer_link .apple img{
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+ }
+ .footer_bottom{
+    color: rgb(162, 161, 161);
+    font-size: 14px;
+    text-align: center;
+ }
+.footer_bottom .footer_content2{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    margin-left: 520px;
+ }
+/* footer section end */
+
+/* responsive start */
+@media only screen and (max-width: 480px){
+    .container{
+       width: 100%;
+       margin: 0 0;
+    }
+    .menu_container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu_container .nav .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .banner_container {
+        display: flex;
+        flex-direction:column-reverse;
+        gap: 40px;
+    
+    }
+    .banner_leftbox{
+        width: 100%;
+        padding-right: 80px;
+    }
+    .banner_rightbox {
+        width: 100%;
+        margin-right:0;
+    }
+    .banner_leftbox .banner_content {
+        margin-left: 100px;
+        margin-top: 120px;
+       
+    }
+    #gamer .gamer_container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        font-size: 10px;
+
+    }
+    .gamer_container .gamer_leftbox {
+        width: 100%;
+    }
+    
+    .gamer_container .gamer_rightbox {
+        width: 100%;
+        text-align: center;
+    }
+    .gamer_rightbox .know {
+        background: var(--Hotpink);
+        color: white;
+        height: 30px;
+        width: 100px;
+        border: none;
+        border-radius: 30px;
+        font-size: 12px;
+    }
+    .video_container .video {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        font-size: 10px;
+        margin-left: 75px;
+    }
+    .single_video .intro p{
+        margin-left: 41%;
+    }
+    .play_ins_container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 10px;
+    }
+    .play_ins_container .play_ins_leftbox{
+        width: 100%;
+        text-align: center;
+    }
+    .play_ins_container .play_ins_rightbox{
+        width: 80%; 
+        margin-left: 50px;
+    }
+    .play_ins_rightbox .play_ins_image2 {
+        width: 150px;
+        height: 250px;
+        position: absolute;
+        top: 65%;
+        right: 70%;
+    }
+    .play_gm_container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        font-size: 10px;
+    }
+    .play_gm_container .play_gm_leftbox {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .play_gm_leftbox .play_gm_image2 {
+        width: 150px;
+        height: 250px;
+        position: absolute;
+        top: 65%;
+        left: 70%;
+    }
+    .play_gm_container .play_gm_rightbox{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    #careers {
+        width: 100%;
+        font-size: 10px;
+    }
+    #careers .careers_container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .careers_container .careers_leftbox {
+        width: 100%;
+        color: white;
+        margin-top: 90px;
+        margin-left: 10px;
+        position: relative;
+    }
+    .careers_leftbox button {
+        background: white;
+        color: rgb(249, 75, 162);
+        margin-top: 10px;
+        width: 150px;
+        height: 30px;
+        border: none;
+        border-radius: 30px;
+        font-size: 12px;
+    }
+    
+    .careers_container .careers_rightbox{
+        width: 100%;
+    }
+    .icon_container .icon_1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .icon_container .icon_2{
+        margin-top: -150px;
+        visibility: hidden;
+    }
+    .border_:hover {
+        height: 60px;
+        width: 125px;
+        padding-bottom: 7px;
+        border: 2px solid rgb(249, 75, 162);
+        background: transparent;
+        border-radius: 20px;
+    }
+    .border:hover {
+        height: 60px;
+        width: 100px;
+        padding-bottom: 7px;
+        border: 2px solid rgb(249, 75, 162);
+        background: transparent;
+        border-radius: 20px;
+    }
+    #footer {
+        width: 100%;
+        font-size: 10px;
+    }
+    .footer_head img {
+        margin-left: 110px;
+    }
+    .footer_container .footer_content {
+        gap: 15px;
+        margin-left: 50px;
+        text-align: center;
+    }
+    .footer_link{
+        gap: 15px;
+        margin-left: 60px;
+        text-align: center;
+    }
+    .footer_bottom{
+        font-size: 8px;
+    }
+    .footer_bottom .footer_content2{
+        gap: 10px;
+        margin-left: 80px;
+        text-align: center;
+    }
+}
+
+/* responsive end */
